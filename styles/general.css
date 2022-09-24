@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+}
+
+.whole-container {
+    display: grid;
+    grid-template-columns: 250px 500px 250px;
+    justify-content: center;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+}
+
+.content {
+    /* background-color: greenyellow; */
+}
+
+.right-sidebar {
+    background-color: brown;
+}
+
+button {
+    cursor: pointer;
+}
