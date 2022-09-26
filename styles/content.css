@@ -1,0 +1,164 @@
+.content {
+    border-left: 1px solid rgb(240, 228, 228);
+    border-right: 1px solid rgb(240, 228, 228);
+    flex: 1;
+    max-width: 500px;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.new-tweet {
+    display: flex;
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(240, 228, 228);
+    padding: 0px 15px 15px 15px;
+}
+
+.tweet-profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.tweet-input {
+    margin-left: 7px;
+    border: none;
+    font-size: large;
+    width: 350px;
+    outline: none;
+}
+
+.tweet-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    transition: background-color 0.15s;
+}
+.tweet-icons {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.tweet-icon-div:hover {
+    background-color: lightgray;
+}
+
+.tweet-tweet-button {
+    background-color:rgb(29, 155, 240);
+    padding: 8px 13px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.tweet-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-left: 15px;
+}
+
+.tweet-top-icon {
+    width: 16px;
+    height: 16px
+}
+
+.tweet-content {
+    display: flex;
+}
+
+.tweet-pic {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.shared-tweet {
+    padding: 10px;
+    line-height: 20px;
+    border-bottom:1px solid rgb(240, 228, 228);
+}
+
+.tweet-bottom-bar {
+    display: flex; justify-content: space-between;  color: gray; font-size:smaller
+}
+
+.tweet-bottom-bar img {
+    width: 18px;
+    height:18px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.tweet-buttons {
+    align-items: center;
+}
+
+.comment, .retweet, .fav, .share {
+   /* transition: color 0.15s; */
+   transition: color 0.15s,
+   background-color 0.15s;
+   cursor: pointer;
+    
+}
+
+.retweet {
+    transition: color 0.15;
+}
+
+.comment:hover{
+    color: rgb(117, 198, 224);
+}
+
+.retweet:hover{
+    color: greenyellow;
+}
+
+.fav:hover {
+    color: red;
+}
+
+.comment:hover img, .retweet:hover img, .fav:hover img, .share:hover img {
+    background-color: rgb(243, 240, 240);
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width:750px) {
+    .sidebar-locations, .left-sidebar-tweet {
+        display: none;
+    }
+    .whole-container {
+        position: relative;
+    }
+    .left-sidebar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .left-sidebar-row {
+        width: 50px;
+    }
+    .right-sidebar {
+        display: none;
+    }
+    .logo, .twitter-logo {
+        margin-right: 0;
+    }
+    .profile-pic-left{
+        margin-left:10px
+    }
+}

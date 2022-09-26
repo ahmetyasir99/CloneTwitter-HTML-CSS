@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/sidebar.css">
+    <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/right-sidebar.css">
 </head>
 
 <body>
@@ -21,9 +23,17 @@
             <div class="left-sidebar-row">
                 <div class="logo-and-text">
                     <div>
+                        <img class="logo" src="/logos/home-logo.svg" alt="">
+                    </div>
+                    <div class="sidebar-locations">Anasayfa</div>
+                </div>
+            </div>
+            <div class="left-sidebar-row">
+                <div class="logo-and-text">
+                    <div>
                         <img class="logo" src="/logos/explore-logo.svg" alt="">
                     </div>
-                    <div>Keşfet</div>
+                    <div class="sidebar-locations">Keşfet</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -31,7 +41,7 @@
                     <div>
                         <img class="logo" g src="/logos/notification-logo.svg" alt="">
                     </div>
-                    <div>Bildirimler</div>
+                    <div class="sidebar-locations">Bildirimler</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -39,7 +49,7 @@
                     <div>
                         <img class="logo" src="/logos/message-logo.svg" alt="">
                     </div>
-                    <div>Mesajlar</div>
+                    <div class="sidebar-locations">Mesajlar</div>
                 </div>
 
             </div>
@@ -48,7 +58,7 @@
                     <div>
                         <img class="logo" src="/logos/bookmark-logo.svg" alt="">
                     </div>
-                    <div>Yer İşaretleri</div>
+                    <div class="sidebar-locations">Yer İşaretleri</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -56,7 +66,7 @@
                     <div>
                         <img class="logo" src="/logos/list-logo.svg" alt="">
                     </div>
-                    <div>Listeler</div>
+                    <div class="sidebar-locations">Listeler</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -64,7 +74,7 @@
                     <div>
                         <img class="logo" src="/logos/profile-logo.svg" alt="">
                     </div>
-                    <div>Profil</div>
+                    <div class="sidebar-locations">Profil</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -72,7 +82,7 @@
                     <div>
                         <img class="logo" src="/logos/more-logo.svg" alt="">
                     </div>
-                    <div>Daha Fazla</div>
+                    <div class="sidebar-locations">Daha Fazla</div>
                 </div>
             </div>
             <div class="left-sidebar-row">
@@ -86,15 +96,16 @@
                     <div style="margin-right: 15px;">
                         <img class="profile-pic-left" src="/profile-pic.jpg" alt="">
                     </div>
-                    <div>
-                        <div style="display:flex; align-items: center; font-size: small; font-weight: bold;">Ahmet Yasir<div>
+                    <div class="sidebar-locations">
+                        <div style="display:flex; align-items: center; font-size: small; font-weight: bold;">Ahmet Yasir
+                            <div>
                                 <img class="logo-locked" src="/logos/locked.svg" alt="">
                             </div>
-                            
+
                         </div>
                         <div style="font-size: small; font-weight: bold; color:rgb(141, 139, 139)">@ahmetyasir44</div>
                     </div>
-                    <div style="font-weight: bolder; margin-left: 50px;">
+                    <div class="sidebar-locations" style="font-weight: bolder; margin-left: 50px;">
                         ...
                     </div>
 
@@ -106,10 +117,237 @@
 
 
         <div class="content">
-            content
+            <div style="margin-left:15px; margin-top: 16px; font-weight:bold">Anasayfa</div>
+            <div class="new-tweet">
+                <div>
+                    <img class="tweet-profile-pic" src="/profile-pic.jpg" alt="">
+                </div>
+                <div style="padding-left: 10px;">
+                    <div>
+                        <input class="tweet-input" type="text" name="" id="" placeholder="Neler oluyor?">
+                    </div>
+                    <div style="display: flex; justify-content: space-between; width: 400px; margin-top: 15px;">
+                        <div style="display: flex;">
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/image-logo.svg" alt="">
+                            </div>
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/gif-logo.svg" alt="">
+                            </div>
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/chart-logo.svg" alt="">
+                            </div>
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/smile-logo.svg" alt="">
+                            </div>
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/schedule-logo.svg" alt="">
+                            </div>
+                            <div class="tweet-icon-div">
+                                <img class="tweet-icons" src="/logos/location-logo.svg" alt="">
+                            </div>
+                        </div>
+                        <div><button class="tweet-tweet-button">Tweetle</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shared-tweet">
+                <div class="tweet-top">
+                    <div style="display: flex; font-size: small; color:gray; font-weight:bold">
+                        <div style="margin-right: 9px;">
+                            <img class="tweet-top-icon" src="/logos/list-logo.svg" alt="">
+                        </div>
+                        <div>
+                            Popüler videolar ·&#160;
+                        </div>
+                        <div class="underline" style="color: rgb(33, 152, 173);">
+                            Daha Fazlasını Gör
+                        </div>
+                    </div>
+                    <div>
+                        <img class="tweet-icons" src="/logos/close-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <div>
+                        <img class="tweet-profile-pic" src="/profile-pic.jpg" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex:1; padding: 10px;">
+                        <div style="display: flex; justify-content:space-between; flex:1">
+                            <div style="display: flex; font-size: small;">
+                                <div style="font-weight:bold">Mehmet Bayrak</div>
+                                <div style="color:gray">&#160;@mehmet · 23s</div>
+                            </div>
+                            <div>
+                                <img class="tweet-icons" src="/logos/more-three-dots.svg" alt="">
+                            </div>
+                        </div>
+                        <div style="color: gray; margin-top: -10px; font-size: small;">Türkiye devlet görevlisi</div>
+                        <div style="margin-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatem doloribus
+                            illum earum architecto iste culpa nemo voluptatibus dolore! Et aspernatur ab quisquam maxime
+                            consequuntur fugit quos ad. Nobis, sunt.
+                        </div>
+                        <div>
+                            <img class="tweet-pic" src="/woods.jpg" alt="">
+                        </div>
+                        <div class="tweet-bottom-bar">
+                            <div class="tweet-buttons comment" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/comments.svg" alt="">
+                                </div>
+                                <div>
+                                    365
+                                </div>
+                            </div>
+                            <div class="tweet-buttons retweet" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/retweet-logo.svg" alt="">
+                                </div>
+                                <div>
+                                    1.452
+                                </div>
+                            </div>
+                            <div class="tweet-buttons fav" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/fav-logo.svg" alt="">
+                                </div>
+                                <div>
+                                    452
+                                </div>
+                            </div>
+                            <div class="tweet-buttons share" style="display: flex; margin-right: 20px;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/share-logo.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shared-tweet">
+                <div class="tweet-top">
+                    <div style="display: flex; font-size: small; color:gray; font-weight:bold">
+                        <div style="margin-right: 9px;">
+                            <img class="tweet-top-icon" src="/logos/list-logo.svg" alt="">
+                        </div>
+                        <div>
+                            Popüler videolar ·&#160;
+                        </div>
+                        <div class="underline" style="color: rgb(33, 152, 173);">
+                            Daha Fazlasını Gör
+                        </div>
+                    </div>
+                    <div>
+                        <img class="tweet-icons" src="/logos/close-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="tweet-content">
+                    <div>
+                        <img class="tweet-profile-pic" src="/profile-pic.jpg" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex:1; padding: 10px;">
+                        <div style="display: flex; justify-content:space-between; flex:1">
+                            <div style="display: flex; font-size: small;">
+                                <div style="font-weight:bold">Mehmet Bayrak</div>
+                                <div style="color:gray">&#160;@mehmet · 23s</div>
+                            </div>
+                            <div>
+                                <img class="tweet-icons" src="/logos/more-three-dots.svg" alt="">
+                            </div>
+                        </div>
+                        <div style="color: gray; margin-top: -10px; font-size: small;">Türkiye devlet görevlisi</div>
+                        <div style="margin-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatem doloribus
+                            illum earum architecto iste culpa nemo voluptatibus dolore! Et aspernatur ab quisquam maxime
+                            consequuntur fugit quos ad. Nobis, sunt.
+                        </div>
+                        <div>
+                            <img class="tweet-pic" src="/woods.jpg" alt="">
+                        </div>
+                        <div class="tweet-bottom-bar">
+                            <div class="tweet-buttons comment" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/comments.svg" alt="">
+                                </div>
+                                <div>
+                                    365
+                                </div>
+                            </div>
+                            <div class="tweet-buttons retweet" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/retweet-logo.svg" alt="">
+                                </div>
+                                <div>
+                                    1.452
+                                </div>
+                            </div>
+                            <div class="tweet-buttons fav" style="display: flex;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/fav-logo.svg" alt="">
+                                </div>
+                                <div>
+                                    452
+                                </div>
+                            </div>
+                            <div class="tweet-buttons share" style="display: flex; margin-right: 20px;">
+                                <div>
+                                    <img class="tweet-icons" src="/logos/share-logo.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="right-sidebar">
-            right
+            <div class="search">
+                <img class="logo" src="/logos/search-logo.svg" alt="">
+                <input placeholder="Twitter'da Ara" type="text" name="" id="">
+            </div>
+            <div class="news">
+                <div style="font-weight: bolder; font-size:20px; margin:10px 0px 10px 5px">İlgini çekebilecek gündemler</div>
+                <div class="new">
+                    <div style="display: flex; justify-content:space-between;font-size: small; color: rgb(116, 114, 114); margin-bottom: -10px;">
+                        <div>
+                            Haberler · Gündemdekiler
+                        </div>
+                        <div>
+                            <img class="logo" src="/logos/more-three-dots.svg" alt="">
+                        </div>
+                    </div>
+                    <div style="font-weight: bold; margin-bottom: 5px;">#SONDAKİKA</div>
+                    <div style="font-size: small;">5.962 Tweet</div>
+                </div>
+
+                <div class="new">
+                    <div style="display: flex; justify-content:space-between;font-size: small; color: rgb(116, 114, 114); margin-bottom: -10px;">
+                        <div>
+                            Türkiye tarihinde gündemde
+                        </div>
+                        <div>
+                            <img class="logo" src="/logos/more-three-dots.svg" alt="">
+                        </div>
+                    </div>
+                    <div style="font-weight: bold; margin-bottom: 5px;">#Twitter</div>
+                    <div style="font-size: small;">1.262 Tweet</div>
+                </div>
+
+                <div class="new">
+                    <div style="display: flex; justify-content:space-between;font-size: small; color: rgb(116, 114, 114); margin-bottom: -10px;">
+                        <div>
+                            Haberler · Gündemdekiler
+                        </div>
+                        <div>
+                            <img class="logo" src="/logos/more-three-dots.svg" alt="">
+                        </div>
+                    </div>
+                    <div style="font-weight: bold; margin-bottom: 5px;">#SONDAKİKA</div>
+                    <div style="font-size: small;">5.962 Tweet</div>
+                </div>
+
+                
+            </div>
         </div>
     </div>
 </body>

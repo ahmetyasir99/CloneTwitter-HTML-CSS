@@ -1,0 +1,42 @@
+.right-sidebar {
+    width: 350px;
+    padding: 5px 400px 5px 15px;
+    padding: 10px;
+}
+
+.search {
+    width: 95%;
+    height: 35px;
+    padding: 5px 5px 5px 10px;
+    background-color: #f4f4f5; 
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: none
+}
+
+.search input {
+    background-color: #f4f4f5; 
+    border: none;
+    font-size: medium;
+    outline: none;
+    width: 100%;
+}
+
+.news {
+    background-color: #f4f4f5; 
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.new {
+    padding: 20px 0px 20px 5px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.new:hover {
+    background-color: rgb(241, 239, 239)
+}
+
