@@ -161,4 +161,7 @@
     .profile-pic-left{
         margin-left:10px
     }
+    .right-sidebar {
+        display: none;
+    }
 }
